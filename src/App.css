@@ -1,4 +1,42 @@
-.App {
+.heading{
+  margin: 40px 50px;
+  color: burlywood;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: x-large;
+  text-shadow: 2px 3px 2px gray;
+  font-family: 'Open Sans', sans-serif; 
+}
+.imgss{
+  display: flex !important;
+   justify-content: center !important;
+   
+}
+body{
+  background-color: rgba(0,255,255, 0.8);
+  box-sizing: border-box;
+}
+.h1{
+  text-align: center;
+  /* align-items: center; */
+  margin-top: 220px;
+  background-color: #F4CE6A;
+  border-radius: 30px;
+  height: 60px;
+  width: 500px;
+  padding-top: 25px;
+  margin-left: 30%;
+   font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +73,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
