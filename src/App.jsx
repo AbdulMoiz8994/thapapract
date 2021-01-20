@@ -1,8 +1,20 @@
 import React from 'react';
 import './App.css'
+import Heading from './Heading'
+import Para from './Para'
+import Ul from './Ul'
+
 
 function App(){
-  // const names="abdul moiz"
+ 
+  return(
+    <div>
+      <div>
+<Heading/>
+<Para/>
+<Ul/>
+      </div>
+      {/* // const names="abdul moiz"
   // const lastNames="Attari"
   //  const currentDate= new Date().toLocaleDateString()
   //  const currentTime= new Date().toLocaleTimeString()
@@ -19,31 +31,23 @@ function App(){
   // textShadow: '2px 3px 2px gray',
   // fontFamily: "'Open Sans', sans-serif", 
   //  }
- let dates= new Date(2021,1,18,14);
- dates= dates.getHours();
- let changes='';
- let colors={};
- if(dates >=1 && dates <=12){
-   changes="Good Morning"
-   colors.color="green"
+//  let dates= new Date(2021,1,18,14);
+//  dates= dates.getHours();
+//  let changes='';
+//  let colors={};
+//  if(dates >=1 && dates <=12){
+//    changes="Good Morning"
+//    colors.color="green"
 
- }else if(dates >12 && dates <=19){
-    changes="Good Evening"
-    colors.color="orange"
- }else{
-   changes="Good Night"
-   colors.color="black"
+//  }else if(dates >12 && dates <=19){
+//     changes="Good Evening"
+//     colors.color="orange"
+//  }else{
+//    changes="Good Night"
+//    colors.color="black"
 
- }
-  return(
-    <div>
-      <div>
-
-<h1 style={{color: '#E03B8B'}} className="h1">hello sir, <span style={colors}>{changes}</span></h1>
-
-
-
-      </div>
+//  } */}
+{/* <h1 style={{color: '#E03B8B'}} className="h1">hello sir, <span style={colors}>{changes}</span></h1> */}
 
       {/* <h1 style={heading}>Thapa Technical React Practice before</h1>
       <h1 style={{color: 'blue', textAlign: 'center', fontFamily: 'sans-serif'}}>Thapa Technical React Practice before</h1>
