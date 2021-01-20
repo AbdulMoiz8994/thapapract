@@ -1,18 +1,54 @@
 import React from 'react';
 import './App.css'
-import Heading from './Heading'
-import Para from './Para'
-import Ul from './Ul'
+
+// import Heading,{subheading,numbers,anothersunheading} from './Heading'
+import Para,{Sub,divs,Mul} from './Para'
+// import Ul from './Ul'
 
 
 function App(){
- 
+
+ let dates=new Date()
+ dates=dates.getHours()
+ let changes;
+  let colors={
+
+  }
+ if(dates >=1 && dates <=12){
+   changes="Good Morning"
+    colors.color="green"
+ }else if(dates >12 && dates <=19){
+   changes="Good Evening";
+   colors.color="orange"
+ }else{
+   changes="Good Night"
+ }
+
+
+
+
+
   return(
     <div>
       <div>
-<Heading/>
-<Para/>
-<Ul/>
+ <h1>Hello sir,<span  style={colors}>{changes}</span></h1>
+<ul>
+  <li>This Addition result is {Para(10,2)}</li>
+  <li>This subtraction result is {Sub(10,2)}</li>
+  <li>This multipilication result is {Mul(10,2)}</li>
+  <li>This division result is { divs(3245,2)}</li>
+
+</ul>
+
+{/* <Heading/> */}
+{/* <ol>
+  <li>{subheading()}</li>
+  <li>{numbers}</li>
+  <li>{anothersunheading()}</li>
+  <li></li>
+</ol> */}
+
+{/* <Ul/> */}
       </div>
       {/* // const names="abdul moiz"
   // const lastNames="Attari"
