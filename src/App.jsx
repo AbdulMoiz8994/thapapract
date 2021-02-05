@@ -1,44 +1,42 @@
 import React from 'react';
 import './App.css'
-
+import Card from './Card'
 // import Heading,{subheading,numbers,anothersunheading} from './Heading'
-import Para,{Sub,divs,Mul} from './Para'
+// import Para,{Sub,Div,Mul} from './Para'
 // import Ul from './Ul'
+//  let dates=new Date()
+//  dates=dates.getHours()
+//  let changes;
+//   let colors={
 
+//   }
+//  if(dates >=1 && dates <=12){
+//    changes="Good Morning"
+//     colors.color="green"
+//  }else if(dates >12 && dates <=19){
+//    changes="Good Evening";
+//    colors.color="orange"
+//  }else{
+//    changes="Good Night"
+//  }
 
 function App(){
-
- let dates=new Date()
- dates=dates.getHours()
- let changes;
-  let colors={
-
-  }
- if(dates >=1 && dates <=12){
-   changes="Good Morning"
-    colors.color="green"
- }else if(dates >12 && dates <=19){
-   changes="Good Evening";
-   colors.color="orange"
- }else{
-   changes="Good Night"
- }
-
-
-
-
-
   return(
     <div>
-      <div>
- <h1>Hello sir,<span  style={colors}>{changes}</span></h1>
+<Card imgsrc="https://dark.netflix.io/share/global.png" 
+title="A Netfilix Original Series" 
+sName="Dark" 
+ahref="https://www.netflix.com/pk/title/80100172"/>
+
+ {/* <h1>Hello sir,<span  style={colors}>{changes}</span></h1>
 <ul>
-  <li>This Addition result is {Para(10,2)}</li>
+ <li>This Addition result is {Para(10,10)}</li> 
+ 
   <li>This subtraction result is {Sub(10,2)}</li>
   <li>This multipilication result is {Mul(10,2)}</li>
-  <li>This division result is { divs(3245,2)}</li>
+  <li>This division result is { Div(245,9)}</li>
 
-</ul>
+</ul> */}
 
 {/* <Heading/> */}
 {/* <ol>
@@ -49,7 +47,6 @@ function App(){
 </ol> */}
 
 {/* <Ul/> */}
-      </div>
       {/* // const names="abdul moiz"
   // const lastNames="Attari"
   //  const currentDate= new Date().toLocaleDateString()
