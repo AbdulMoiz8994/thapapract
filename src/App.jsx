@@ -1,5 +1,6 @@
-import React,{useState} from 'react';
+import React from 'react';
 import './App.css'
+import { Ntefilx } from './Components/Ntefilx';
 // import Card from './Card'
 // import Heading,{subheading,numbers,anothersunheading} from './Heading'
 // import Para,{Sub,Div,Mul} from './Para'
@@ -22,31 +23,41 @@ import './App.css'
 
 function App(){
 
-let Obj=[
-  {id: 0, Name:"Abdul Moiz", Age:20},
-  {id: 1, Name:"Abdul Rafay", Age:22},
-  {id: 2, Name:"Abdul Malik", Age:25}
 
-]
-let[myName, setMyName]=useState(Obj)
-// console.log(myName)
-const state=()=>{
-   setMyName([])
-}
 
-const delfunction=(id) =>{
-  // alert(id)
-  const Array=myName.filter((values) => {
-    return  values.id !== id
-  })
-   setMyName(Array)
-}
+// let Obj=[
+//   {id: 0, Name:"Abdul Moiz", Age:20},
+//   {id: 1, Name:"Abdul Rafay", Age:22},
+//   {id: 2, Name:"Abdul Malik", Age:25}
+
+// ]
+// let[myName, setMyName]=useState(Obj)
+// // console.log(myName)
+// const state=()=>{
+//    setMyName([])
+// }
+
+// const delfunction=(id) =>{
+//   console.log(id)
+//   const Array=myName.filter((values) => {
+//     console.log(values)
+//     return  values.id !== id
+//   })
+//    setMyName(Array)
+// }
 
 
   return(
     <div>
-{myName.map((values) => <h1 key={values.id}>Name: {values.Name} Age: {values.Age} <button onClick= {() => delfunction(values.id)}>Remove varaible</button></h1>)}
-<button onClick={state}>Update</button>
+
+
+<Ntefilx />
+{/* <Ntefilx /> */}
+
+
+
+{/* {myName.map((values) => <h1 key={values.id}>Name: {values.Name} Age: {values.Age} <button onClick= {() => delfunction(values.id)}>Remove varaible</button></h1>)}
+<button onClick={state}>Update</button> */}
 
 
 {/* <h1>{myName ? "Moiz khanzada" : "Abdul Moiz Attari"}</h1> */}
