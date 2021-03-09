@@ -28,9 +28,9 @@ body{
   margin-left: 30%;
    font-weight: bolder;
 } */
-.div {
-  /* display: flex; */
-  justify-content: center;
+/* .div { */
+/* display: flex; */
+/* justify-content: center;
   align-items: center;
   font-size: x-large;
   text-transform: uppercase;
@@ -45,7 +45,7 @@ body{
 
 h1 {
   text-align: center;
-}
+} */
 
 /* .App {
   text-align: center;
@@ -85,3 +85,21 @@ h1 {
     transform: rotate(360deg);
   }
 } */
+
+/* toggle button */
+* {
+  margin: 0%;
+  padding: 0%;
+}
+.lite {
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  color: black;
+}
+.dark {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+}

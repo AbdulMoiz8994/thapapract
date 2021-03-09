@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css'
 import { Ntefilx } from './Components/Ntefilx';
 // import Card from './Card'
@@ -21,58 +21,61 @@ import { Ntefilx } from './Components/Ntefilx';
 //    changes="Good Night"
 //  }
 
-function App(){
+function App() {
 
 
 
-// let Obj=[
-//   {id: 0, Name:"Abdul Moiz", Age:20},
-//   {id: 1, Name:"Abdul Rafay", Age:22},
-//   {id: 2, Name:"Abdul Malik", Age:25}
+  // let Obj=[
+  //   {id: 0, Name:"Abdul Moiz", Age:20},
+  //   {id: 1, Name:"Abdul Rafay", Age:22},
+  //   {id: 2, Name:"Abdul Malik", Age:25}
 
-// ]
-// let[myName, setMyName]=useState(Obj)
-// // console.log(myName)
-// const state=()=>{
-//    setMyName([])
-// }
+  // ]
+  // let[myName, setMyName]=useState(Obj)
+  // // console.log(myName)
+  // const state=()=>{
+  //    setMyName([])
+  // }
 
-// const delfunction=(id) =>{
-//   console.log(id)
-//   const Array=myName.filter((values) => {
-//     console.log(values)
-//     return  values.id !== id
-//   })
-//    setMyName(Array)
-// }
-
-
-  return(
-    <div>
-
-
-<Ntefilx />
-{/* <Ntefilx /> */}
+  // const delfunction=(id) =>{
+  //   console.log(id)
+  //   const Array=myName.filter((values) => {
+  //     console.log(values)
+  //     return  values.id !== id
+  //   })
+  //    setMyName(Array)
+  // }
 
 
 
-{/* {myName.map((values) => <h1 key={values.id}>Name: {values.Name} Age: {values.Age} <button onClick= {() => delfunction(values.id)}>Remove varaible</button></h1>)}
+  const [list, setList] = useState(true)
+
+  return (
+    <div className={list ? 'lite' : 'dark'}>
+      <h1>The room is {list ? 'lite' : 'dark'}</h1>
+      <button onClick={() => setList(!list)}>Toggle Button</button>
+      {/* <Ntefilx /> */}
+      {/* <Ntefilx /> */}
+
+
+
+      {/* {myName.map((values) => <h1 key={values.id}>Name: {values.Name} Age: {values.Age} <button onClick= {() => delfunction(values.id)}>Remove varaible</button></h1>)}
 <button onClick={state}>Update</button> */}
 
 
-{/* <h1>{myName ? "Moiz khanzada" : "Abdul Moiz Attari"}</h1> */}
-{/* <button onClick={() => setMyName(!myName)}> Update Name</button> */}
+      {/* <h1>{myName ? "Moiz khanzada" : "Abdul Moiz Attari"}</h1> */}
+      {/* <button onClick={() => setMyName(!myName)}> Update Name</button> */}
 
 
 
 
 
-{/* <Card imgsrc="https://dark.netflix.io/share/global.png" 
+      {/* <Card imgsrc="https://dark.netflix.io/share/global.png" 
 title="A Netfilix Original Series" 
 sName="Dark" 
 ahref="https://www.netflix.com/pk/title/80100172"/> */}
 
- {/* <h1>Hello sir,<span  style={colors}>{changes}</span></h1>
+      {/* <h1>Hello sir,<span  style={colors}>{changes}</span></h1>
 <ul>
  <li>This Addition result is {Para(10,10)}</li> 
  
@@ -82,15 +85,15 @@ ahref="https://www.netflix.com/pk/title/80100172"/> */}
 
 </ul> */}
 
-{/* <Heading/> */}
-{/* <ol>
+      {/* <Heading/> */}
+      {/* <ol>
   <li>{subheading()}</li>
   <li>{numbers}</li>
   <li>{anothersunheading()}</li>
   <li></li>
 </ol> */}
 
-{/* <Ul/> */}
+      {/* <Ul/> */}
       {/* // const names="abdul moiz"
   // const lastNames="Attari"
   //  const currentDate= new Date().toLocaleDateString()
@@ -124,7 +127,7 @@ ahref="https://www.netflix.com/pk/title/80100172"/> */}
 //    colors.color="black"
 
 //  } */}
-{/* <h1 style={{color: '#E03B8B'}} className="h1">hello sir, <span style={colors}>{changes}</span></h1> */}
+      {/* <h1 style={{color: '#E03B8B'}} className="h1">hello sir, <span style={colors}>{changes}</span></h1> */}
 
       {/* <h1 style={heading}>Thapa Technical React Practice before</h1>
       <h1 style={{color: 'blue', textAlign: 'center', fontFamily: 'sans-serif'}}>Thapa Technical React Practice before</h1>
